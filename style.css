@@ -829,3 +829,66 @@ footer p {
         padding: 12px 0;
     }
 }
+
+
+/* General Navbar Styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Hamburger icon visibility on mobile */
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Mobile view (max-width: 768px) */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #1e4d2b;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+        /* Show the menu when active */
+    }
+    .nav-links li {
+        padding: 12px 0;
+    }
+}

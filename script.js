@@ -2,8 +2,9 @@ const form = document.querySelector('form');
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.getElementById('navLinks');
 
+// Add click event listener to toggle menu visibility
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+    navLinks.classList.toggle('active'); // Toggle 'active' class to show/hide nav links
 });
 
 
