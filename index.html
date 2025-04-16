@@ -6,12 +6,24 @@
     <title>Niswarth Care Club and Trust</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-
-
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  });
+</script>
+
 <body>
   <nav class="navbar">
+    <!-- Hamburger icon (for mobile) -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
     <ul class="nav-links">
       <li><a href="#">Home</a></li> 
       <li><a href="#about">About</a></li>
@@ -21,11 +33,7 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="volunteer.html">Volunteer</a></li>
     </ul>
-    <div id="hamburger" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-  </div>
+   
    
 </nav>
       
