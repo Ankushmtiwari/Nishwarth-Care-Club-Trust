@@ -993,3 +993,54 @@ footer p {
         color: #000;
     }
 }
+
+.navbar ul li {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 10px;
+    /* optional spacing */
+}
+
+.navbar ul li a {
+    font-weight: bold;
+    background-color: #fdd835 !important;
+    /* Yellow */
+    color: black !important;
+    padding: 10px 20px;
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* reduce spacing */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 5px;
+    /* tighter spacing */
+}
+
+.navbar ul li a {
+    font-weight: bold;
+    font-size: 14px;
+    /* smaller size */
+    padding: 8px 16px;
+    /* tighter padding */
+    background-color: #fdd835;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+}
